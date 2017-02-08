@@ -32,5 +32,17 @@ public class MyPanelClass extends JPanel {
                         // Inner Border
                         g.setColor(Color.YELLOW);
                         g.drawRect(x1 + 10, y1 + 10, width - 20, height - 20);          
-            }
+           
+                        // Draws diagonal from top left to bottom right
+                        g.setColor(Color.WHITE);
+                        g.drawLine(x1, y1, x2, y2);
+                        
+                        //Draws diagonal from top right to bottom left
+                        g.setColor(Color.red);
+                        g.drawLine(x1+200, y1, x2-200, y2);
+                        
+                        g.setColor(Color.magenta);
+                        g.fillOval(y1 + 75, x1 + 75, width - 145, height - 145);
+                        
+			}
 }
