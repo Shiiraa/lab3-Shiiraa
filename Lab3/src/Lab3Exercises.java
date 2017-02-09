@@ -11,7 +11,7 @@ public class Lab3Exercises {
 
 		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		myFrame.setLocation(880, 380);
-		myFrame.setSize(400, 250);
+		myFrame.setSize(400, 180);
 		myFrame.setVisible(true);
 
 

@@ -26,39 +26,26 @@ public class MyPanelClass extends JPanel {
                         //Paint the background
                         g.setColor(Color.black);
                         g.fillRect(x1, y1, width+1, height+1);
-//                        
-//                        // Outer Border
-//                        g.setColor(Color.CYAN);
-//                        g.drawRect(x1, y1, width, height);
-//                        
-//                        // Inner Border
-//                        g.setColor(Color.YELLOW);
-//                        g.drawRect(x1 + 10, y1 + 10, width - 20, height - 20);          
-//           
-//                        // Draws diagonal from top left to bottom right
-//                        g.setColor(Color.WHITE);
-//                        g.drawLine(x1, y1, x2, y2);
-//                        
-//                        //Draws diagonal from top right to bottom left
-//                        g.setColor(Color.red);
-//                        g.drawLine(x1+200, y1, x2-200, y2);
-                        
-                        //g.setColor(Color.magenta);
-                        //g.fillOval(y1 + 75, x1 + 75, width - 145, height - 145);
+
                         
                         
-//                        // lines
-//                        Polygon p = new Polygon();
-//                        p.addPoint(x1 + 5, y1 + 25);
-//                        p.addPoint(x1 + 20, y1 + 10);
-//                        p.addPoint(x1 + 35, y1 + 25);
-//                        p.addPoint(x1 + 25, y1 + 25);
-//                        p.addPoint(x1 + 25, y1 + 45);
-//                        p.addPoint(x1 + 15, y1 + 45);
-//                        p.addPoint(x1 + 15, y1 + 25);
-//                        g.setColor(Color.YELLOW);
-//                        g.fillPolygon(p);
-//                        
+                        g.setColor(Color.red);
+                        g.fillRect(0, 0, 400, 30);
+                        g.setColor(Color.white);
+                        g.fillRect(0, 25, 400, 35);
+                        g.setColor(Color.red);
+                        g.fillRect(0, 60, 400, 50);
+                        g.setColor(Color.white);
+                        g.fillRect(0, 100, 400, 35);
+                        g.setColor(Color.red);
+                        g.fillRect(0, 135, 400, 35);
+                        
+                        Polygon p = new Polygon();
+                        p.addPoint(0, 0);
+                        p.addPoint(0, 170);
+                        p.addPoint(100, 80);
+                        g.setColor(Color.blue);
+                        g.fillPolygon(p);
                         
                         //Star
                         Polygon p2 = new Polygon();
@@ -89,10 +76,10 @@ public class MyPanelClass extends JPanel {
                         //Point between triangle 5 and 4
                         p2.addPoint(x1 + 38, y1 + 83);
                         
-                        g.setColor(Color.WHITE);
+                        g.setColor(Color.white);
                         g.fillPolygon(p2);
-
-
+                        
+                     
                         
 			}
 }
